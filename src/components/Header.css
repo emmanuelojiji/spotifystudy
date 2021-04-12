@@ -1,0 +1,57 @@
+header{
+    height: auto;
+    width: 100%;
+    background-color:black;
+    height: 100px;
+
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .global-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+svg{
+    width: 160px;
+    fill: white;
+}
+
+nav{
+    display: flex;
+}
+
+
+nav a, h1{
+    color:white;
+    padding: 28px;
+    font-weight: bold;
+    font-size: 1.25em;
+    letter-spacing: 0.5px;
+    display: inline;
+    cursor: pointer;
+}
+
+.profile-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-menu{
+    display: flex;
+    flex-direction: column;
+    background-color:white;
+    position: absolute;
+    top:70px;
+    border-radius: 3px;
+}
+
+.mobile-menu a{
+    color:black;
+    padding:13px 28px;
+    font-size: 1.2em;
+}
