@@ -1,5 +1,5 @@
-*{
-  font-family: 'circularRegular';
+* {
+  font-family: "circularRegular";
   text-decoration: none;
 }
 
@@ -18,10 +18,20 @@
   src: url(./fonts/CircularXXWebTrial-LightTrial.woff);
 }
 
-.global-wrap{
+button:hover {
+  cursor: pointer;
+}
+
+/* .global-wrap{
   width: 100%;
-  max-width: 1500px;
+  max-width: 1190px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+@media only screen and (max-width: 990px) {
+  .global-wrap{
+    max-width:750px;
+  }
+} */
+/*# sourceMappingURL=App.css.map */

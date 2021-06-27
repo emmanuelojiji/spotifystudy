@@ -1,0 +1,36 @@
+* {
+  font-family: "circularRegular";
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: circularRegular;
+  src: url(./fonts/CircularXXWebTrial-RegularTrial.woff);
+}
+
+@font-face {
+  font-family: circularBold;
+  src: url(./fonts/CircularXXWebTrial-BoldTrial.woff);
+}
+
+@font-face {
+  font-family: circularLight;
+  src: url(./fonts/CircularXXWebTrial-LightTrial.woff);
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+/* .global-wrap{
+  width: 100%;
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media only screen and (max-width: 990px) {
+  .global-wrap{
+    max-width:750px;
+  }
+} */

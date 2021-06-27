@@ -1,0 +1,114 @@
+header {
+  height: auto;
+  width: 100%;
+  background-color: black;
+  height: 80px;
+
+  position: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  header {
+    height: 54px;
+  }
+}
+
+svg {
+  width: 120px;
+  fill: white;
+  margin-right: 2px;
+}
+
+@media only screen and (max-width: 990px) {
+  svg {
+    width: 88.5px;
+  }
+}
+
+.desktop-nav {
+  display: flex;
+}
+
+@media only screen and (max-width: 990px) {
+  .desktop-nav {
+    display: none;
+  }
+}
+
+.desktop-nav a {
+  color: white;
+  padding: 28px;
+  font-weight: bold;
+  font-size: 1.25em;
+  letter-spacing: 0.5px;
+  display: inline;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+header span {
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrap {
+  display: flex;
+  align-items: center;
+  color: white;
+
+  p {
+    font-size: 22px;
+    font-family: "circularLight";
+
+    @media only screen and (max-width: 990px) {
+        font-size: 17px;
+        font-weight: bold;
+    }
+  }
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  position: absolute;
+  top: 70px;
+  border-radius: 3px;
+}
+
+.drop-menu a {
+  color: black;
+  padding: 13px 28px;
+  font-size: 1.2em;
+}
+
+.mobile-menu {
+  color: white;
+  font-size: 22px;
+}
+
+@media only screen and (min-width: 990px) {
+  .mobile-menu {
+    display: none;
+  }
+}
