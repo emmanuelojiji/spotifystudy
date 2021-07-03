@@ -1,0 +1,105 @@
+.user-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#121212;
+  height: 70px;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .user-header-wrap{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+
+
+main{
+  background-color: #121212;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 30px;
+
+  .main-wrap{
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+
+
+
+
+.card-container {
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+
+  h1 {
+    color: white;
+    font-size: 1.6em;
+  font-family: "circularBold";
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+  }
+
+  .card-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  transition: ease 0.3s;
+  color: black;
+  border-radius: 2px;
+ 
+  border:solid 1px grey;
+
+  @media only screen and (min-width: 660px) {
+    &:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+      background-color: #98e4d8;
+      color: white;
+    }
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-family: "CircularBold";
+    letter-spacing: -2px;
+    font-size: 1.6em;
+    color: white;
+  }
+
+  p {
+    font-size: 0.9em;
+    color:#b3b3b3;
+  }
+
+}
+

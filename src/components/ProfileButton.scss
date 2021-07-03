@@ -1,0 +1,83 @@
+.profile-container {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  border-radius: 500px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  align-items: center;
+  transition: 0.15s ease-in-out;
+
+  &:hover {
+    background-color: #474747;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 592px) {
+    padding: 0;
+  }
+
+  .circle-container {
+    height: 30px;
+    min-height: 30px;
+    width: 30px;
+    min-width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333333;
+    border-radius: 500px;
+
+    .fa-user {
+      color: white;
+    }
+  }
+
+  p {
+    color: white;
+    margin-left: 8px;
+    margin-right: 10px;
+    font-family: "circularBold";
+    font-size: 14px;
+
+    @media only screen and (max-width: 592px) {
+      display: none;
+    }
+  }
+
+  .fa-sort-down {
+    color: white;
+    margin-right: 14px;
+    align-self: center;
+    height: 20px;
+
+    @media only screen and (max-width: 592px) {
+      display: none;
+    }
+  }
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.dropdown-menu {
+  background-color: #474747;
+  width: 200px;
+  position: absolute;
+  top: 60px;
+  border-radius: 2px;
+  display: none;
+  padding: 16px;
+  
+
+  a{
+    color: white;
+    display: block;
+    font-family: "circularRegular";
+    margin-bottom: 12px;
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "spotifystudy",
-  "homepage": "http://emmanuel2612.github.io/spotifystudy/",
+  "homepage": "./",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

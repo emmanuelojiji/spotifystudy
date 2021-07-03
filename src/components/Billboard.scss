@@ -1,45 +1,120 @@
-.billboard{
-    height: 100vh;
-    width: 100%;
-    padding-top: 100px;
-    color:white;
-    background-size: cover;
-    background-position: center;
-    
+.billboard {
+  height: 100vh;
+  width: 100%;
+  color: white;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    background-color: #191919;
-    padding-left: 5%;
-    padding-right: 5%;
-    
-    .billboard-wrap{
+  background-color: #090C08;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .billboard-wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     width: 100%;
     max-width: 1200px;
-    
+    margin-bottom: 80px;
+
+    @media only screen and (max-width: 500px) {
+      align-items: center;
     }
+  }
 }
 
+.billboard h1 {
+  font-size: 3em;
+  font-family: "circularBold";
+  letter-spacing: -3px;
 
-.billboard h1{
-    font-size: 3em;
-    font-family: 'circularBold';
+  @media only screen and (max-width: 500px) {
+    font-size: 2.5em;
+    text-align: center;
+  }
 }
 
-.billboard p{
-    font-size: 1.5em;
-    margin-top: 12px;
-    margin-bottom: 30px;
+.billboard p {
+  font-size: 16px;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  @media only screen and (max-width: 500px) {
+    text-align: center;
+  }
 }
 
-.line-break{
-    @media only screen and (min-width: 600px) {
-        display: none;
-    }
+.line-break {
+  @media only screen and (min-width: 600px) {
+    display: none;
+  }
+}
+
+.circle-1 {
+  height: 270px;
+  width: 250px;
+  border-radius: 500px;
+  background-color: #ffb7c3;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 1;
+
+  @media only screen and (max-width: 760px) {
+    right: -120px;
+    top: -30px;
+  }
+
+  @media only screen and (min-width: 760px) {
+    right: -500px;
+    top: 80px;
+    height: 650px;
+    width: 700px;
+  }
+}
+
+.circle-1-2 {
+  height: 100px;
+  width: 100px;
+  border-radius: 500px;
+  background-color: #ffd3db;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 1;
+
+  @media only screen and (max-width: 760px) {
+    right: 60px;
+    top: 0;
+  }
+
+  @media only screen and (min-width: 760px) {
+    right: 60px;
+    top: 0;
+    display: none;
+  }
+}
+
+.circle-2 {
+  height: 250px;
+  width: 270px;
+  border-radius: 500px;
+  background-color: #ffb7c3;
+  position: absolute;
+  opacity: 0.8;
+  z-index: 1;
+
+  @media only screen and (max-width: 500px) {
+    left: -110px;
+    bottom: -180px;
+  }
+
+  @media only screen and (min-width: 500px) {
+    right: 60px;
+    left: -110px;
+    bottom: -180px;
+  }
 }

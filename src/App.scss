@@ -3,6 +3,18 @@
   text-decoration: none;
 }
 
+body,html{
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100%;
+}
+
+body{
+  position: fixed;
+  width: 100%;
+}
+
+
 @font-face {
   font-family: circularRegular;
   src: url(./fonts/CircularXXWebTrial-RegularTrial.woff);
