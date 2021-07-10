@@ -62,22 +62,21 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-}
 
-.dropdown-menu {
-  background-color: #474747;
-  width: 200px;
-  position: absolute;
-  top: 60px;
-  border-radius: 2px;
-  display: none;
-  padding: 16px;
-  
+  .dropdown-menu {
+    background-color: #474747;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    border-radius: 2px;
+    display: none;
+    padding: 16px;
 
-  a{
-    color: white;
-    display: block;
-    font-family: "circularRegular";
-    margin-bottom: 12px;
+    a {
+      color: white;
+      display: block;
+      font-family: "circularRegular";
+      margin-bottom: 12px;
+    }
   }
 }

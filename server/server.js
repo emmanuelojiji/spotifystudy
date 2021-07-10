@@ -12,8 +12,8 @@ app.post('/typeOfWork', (req, res) => {
     const code = req.body.code
     const spotifyApi = new SpotifyWebApi({
         redirectUri:'http://localhost:3000/typeOfWork/',
-        clientId:'cf93bf76d9084537bca4e8c3b10c7208',
-        clientSecret:'4492ca9d686f43babda545c099680e01'
+        clientId:'0d76e8d73e444adcb46564aa27fdd2ea',
+        clientSecret:'10cb2ad04dee4b94880739b9dec70edf'
 
     })
 

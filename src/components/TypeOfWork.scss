@@ -1,13 +1,13 @@
-.user-header{
+.user-header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#121212;
+  background-color: #121212;
   height: 70px;
   padding-left: 5%;
   padding-right: 5%;
 
-  .user-header-wrap{
+  .user-header-wrap {
     max-width: 1200px;
     width: 100%;
     display: flex;
@@ -16,10 +16,7 @@
   }
 }
 
-
-
-
-main{
+main {
   background-color: #121212;
   height: 100vh;
   display: flex;
@@ -28,14 +25,11 @@ main{
   padding-right: 5%;
   padding-top: 30px;
 
-  .main-wrap{
+  .main-wrap {
     max-width: 1200px;
     width: 100%;
   }
 }
-
-
-
 
 .card-container {
   width: 100%;
@@ -45,13 +39,12 @@ main{
   justify-content: center;
   align-items: flex-start;
 
-
   h1 {
     color: white;
     font-size: 1.6em;
-  font-family: "circularBold";
-  letter-spacing: -1px;
-  margin-bottom: 50px;
+    font-family: "circularBold";
+    letter-spacing: -1px;
+    margin-bottom: 50px;
   }
 
   .card-wrap {
@@ -61,8 +54,6 @@ main{
     align-items: center;
   }
 }
-
-
 
 .card {
   width: 100%;
@@ -76,8 +67,8 @@ main{
   transition: ease 0.3s;
   color: black;
   border-radius: 2px;
- 
-  border:solid 1px grey;
+
+  border: solid 1px grey;
 
   @media only screen and (min-width: 660px) {
     &:hover {
@@ -98,8 +89,6 @@ main{
 
   p {
     font-size: 0.9em;
-    color:#b3b3b3;
+    color: #b3b3b3;
   }
-
 }
-

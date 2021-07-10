@@ -1,14 +1,12 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
-import Header from "./Header";
 import Card from "./Card";
 import "../components/TypeOfWork.scss";
 import ProfileButton from "./ProfileButton";
 
 export default function TypeOfWorkPage() {
+
   const date = new Date();
   const time = date.getHours();
-
   let timeOfDay;
 
   if (time < 12) {
@@ -19,10 +17,7 @@ export default function TypeOfWorkPage() {
     timeOfDay = "Evening";
   }
 
-  const [taskName, setTaskName] = useState(null)
-
   return (
-
     <>
       <div className="user-header">
         <div className="user-header-wrap">
@@ -50,7 +45,7 @@ export default function TypeOfWorkPage() {
 
             <div className="card-wrap">
               <Link to="/PlayerPage">
-                <Card onClick={setTaskName}
+                <Card
                   title="Short Task"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 />
