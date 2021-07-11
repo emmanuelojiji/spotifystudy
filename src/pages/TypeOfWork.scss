@@ -1,22 +1,4 @@
-.user-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #121212;
-  height: 70px;
-  padding-left: 5%;
-  padding-right: 5%;
-
-  .user-header-wrap {
-    max-width: 1200px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-main {
+.type-of-work-main {
   background-color: #121212;
   height: 100vh;
   display: flex;

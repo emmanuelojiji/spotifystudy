@@ -1,10 +1,10 @@
 import "./App.scss";
 import { Route, Switch } from "react-router-dom";
 
-import HomePage from "./components/HomePage";
+import HomePage from "./pages/HomePage";
 
-import TypeOfWorkPage from "./components/TypeOfWorkPage";
-import PlayerPage from "./components/PlayerPage";
+import TypeOfWorkPage from "./pages/TypeOfWorkPage";
+import PlayerPage from "./pages/PlayerPage";
 
 
 const code = new URLSearchParams(window.location.search).get("code");

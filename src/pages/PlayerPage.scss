@@ -1,0 +1,28 @@
+.player-page-main{
+background-color: #121212;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+
+  .player-page-main-wrap {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+  }
+}
+
+.timer-title-wrap{
+    color:white;
+
+    .task-title{
+        font-size: 1.6em;
+        letter-spacing: -2px;
+        font-family: 'CircularBold';
+    }
+
+    .timer{
+        font-family: 'Roboto';
+    }
+}
