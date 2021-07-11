@@ -17,5 +17,6 @@ export default function PlayerPage(title) {
         </div>
       </main>
     </>
-  );
-}
+  ); 
+} 
+
