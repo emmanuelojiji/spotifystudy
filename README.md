@@ -2,4 +2,4 @@
 
 Spotify Study is an app which allows users to choose from three work modes while they listen to music from their Spotify playlists. It will allow users to track amount of time spent working, stay focused and productive. Currently thinking of other features to make it more exciting!
 
-**Note: Page after login requries localhost:3000 to be running as it's in development**
+**!! Note: Page after login requries localhost:3000 to be running as it's in development.**
