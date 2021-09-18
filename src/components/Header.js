@@ -4,7 +4,15 @@ import { Link } from "react-router-dom";
 
 import { auth_url } from "../login";
 
+import { useAuth } from "../useAuth"
+
+import code from "../useAuth"
+
+import accessToken from "../useAuth"
+
 import { useState } from "react";
+
+import ProfileButton from "./ProfileButton";
 
 export default function Header() {
   const [isShown, setIsShown] = useState(false);
@@ -36,12 +44,15 @@ export default function Header() {
           </Link>
 
           <nav className="desktop-nav">
-            <a href={auth_url}>Log in</a>
+          { auth_url.length < 1 ? <ProfileButton /> : <a href={auth_url}>Log in</a> }
           </nav>
 
           <i class="fas fa-bars mobile-menu" onClick={mobileNavToggle}></i>
         </div>
       </header>
+
+
+
       <div className="mobile-nav-container" style={{ display: isShown ? "block" : "none" }}>
         <nav
           className="mobile-nav"

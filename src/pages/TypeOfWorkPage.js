@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 import Card from "../components/Card";
 import "../pages/TypeOfWork.scss";
 import ProfileButton from "../components/ProfileButton";
-import HeaderLoggedIn from "../components/HeaderLoggedIn";
+import Header from "../components/Header";
+import "./PlayerPage";
 
 export default function TypeOfWorkPage() {
   const date = new Date();
@@ -17,9 +19,11 @@ export default function TypeOfWorkPage() {
     timeOfDay = "Evening";
   }
 
+  
+
   return (
     <>
-      <HeaderLoggedIn />
+      <Header />
       <main className="type-of-work-main">
         <div className="main-wrap">
           <section className="card-container">
@@ -27,21 +31,41 @@ export default function TypeOfWorkPage() {
             <h1>Choose Your Work Style</h1>
 
             <div className="card-wrap">
-              <Link to="/PlayerPage">
+              <Link to={{
+                  pathname: "/PlayerPage",
+                  state: {
+                    task: "Short Task",
+                  },
+                }}
+              >
                 <Card
-                  title="Short Task"
+                  taskName="Short Task"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 />
               </Link>
-              <Link to="/PlayerPage">
+              <Link
+                to={{
+                  pathname: "/PlayerPage",
+                  state: {
+                    task: "Medium Task",
+                  },
+                }}
+              >
                 <Card
-                  title="Task Type"
+                  taskName="Task Type"
                   description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
                 />
               </Link>
-              <Link to="/PlayerPage">
+              <Link
+                to={{
+                  pathname: "/PlayerPage",
+                  state: {
+                    task: "Long Task,",
+                  },
+                }}
+              >
                 <Card
-                  title="Task Type"
+                  taskName="Task Type"
                   description="The technique uses a timer to break down work into 25 minute intervals."
                 />
               </Link>
