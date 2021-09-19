@@ -1,0 +1,31 @@
+.player-container{
+    height: 90px;
+    width: 100%;
+    background-color: #181818;
+    position: sticky;
+    bottom: 0;
+    border-top: 1px solid #5d5d5d;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    
+}
+
+.song-cover-container{
+    height: 56px;
+    width: 56px;
+    margin-right: 12px;
+}
+
+.song-cover{
+    max-width: 100%;
+}
+.song-title{
+    color:white;
+    font-size: 14px;
+}
+
+.artist{
+    color: #b3b3b3;
+    font-size: 11px;
+}

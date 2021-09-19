@@ -1,48 +1,6 @@
-.billboard {
-  height: 100vh;
-  width: 100%;
-  color: white;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
-  background: linear-gradient(-45deg, #67a6b0, #015663, #23d5ab);
-	background-size: 400% 400%;
-	animation: gradient 10s ease infinite;
-  padding-left: 5%;
-  padding-right: 5%;
-
-  
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-  .billboard-wrap {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 1200px;
-    margin-bottom: 80px;
-
-    @media only screen and (max-width: 500px) {
-      align-items: center;
-    }
-  }
-
+.homepage {
   h1 {
-    font-size: 3em;
+    font-size: 4em;
     font-family: "circularBold";
     letter-spacing: -3px;
 
@@ -63,87 +21,149 @@
     }
   }
 
-  .line-break {
-    @media only screen and (min-width: 600px) {
-      display: none;
+  @mixin button($backgroundColor) {
+    button {
+      padding: 16px 45px;
+      border: 0;
+      border-radius: 100px;
+      font-size: 0.8em;
+      font-weight: bold;
+      letter-spacing: 2px;
+      background-color: $backgroundColor;
+      color: white;
+      display: inline-block;
+      transition: 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+      }
     }
   }
 
-  .circle-1 {
-    height: 270px;
-    width: 250px;
-    border-radius: 500px;
-    background-color: #C0E8F9;
-    position: absolute;
-    z-index: 1;
+  .billboard {
+    height: 100vh;
+    width: 100%;
+    color: white;
 
-    @media only screen and (max-width: 760px) {
-      right: -120px;
-      top: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(-45deg, #67a6b0, #015663, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+    padding-left: 5%;
+    padding-right: 5%;
+
+    position: relative;
+    overflow: hidden;
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
     }
 
-    @media only screen and (min-width: 760px) {
-      right: -500px;
-      top: 80px;
-      height: 650px;
-      width: 700px;
+    .billboard-wrap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      width: 100%;
+      max-width: 1200px;
+      margin-bottom: 80px;
+
+      @media only screen and (max-width: 500px) {
+        align-items: center;
+      }
+    }
+
+    .line-break {
+      @media only screen and (min-width: 600px) {
+        display: none;
+      }
+    }
+
+    @include button($backgroundColor: #1ed760);
+
+    .circle-1 {
+      height: 270px;
+      width: 250px;
+      border-radius: 500px;
+      background-color: #c0e8f9;
+      position: absolute;
+      z-index: 1;
+
+      @media only screen and (max-width: 760px) {
+        right: -120px;
+        top: -30px;
+      }
+
+      @media only screen and (min-width: 760px) {
+        right: -500px;
+        top: 80px;
+        height: 650px;
+        width: 700px;
+      }
+    }
+
+    .circle-1-2 {
+      height: 100px;
+      width: 100px;
+      border-radius: 500px;
+      background-color: #c0e8f9;
+      position: absolute;
+      z-index: 1;
+
+      @media only screen and (max-width: 760px) {
+        right: 60px;
+        top: 0;
+      }
+
+      @media only screen and (min-width: 760px) {
+        right: 60px;
+        top: 0;
+        display: none;
+      }
+    }
+
+    .circle-2 {
+      height: 250px;
+      width: 270px;
+      border-radius: 500px;
+      background-color: #c0e8f9;
+      position: absolute;
+      z-index: 1;
+
+      @media only screen and (max-width: 500px) {
+        left: -110px;
+        bottom: -180px;
+      }
+
+      @media only screen and (min-width: 500px) {
+        right: 60px;
+        left: -110px;
+        bottom: -180px;
+      }
     }
   }
 
-  .circle-1-2 {
-    height: 100px;
-    width: 100px;
-    border-radius: 500px;
-    background-color: #C0E8F9;
-    position: absolute;
-    z-index: 1;
+  .spotify-mood {
+    height: 500px;
+    background-color: #509bf6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
 
-    @media only screen and (max-width: 760px) {
-      right: 60px;
-      top: 0;
-    }
-
-    @media only screen and (min-width: 760px) {
-      right: 60px;
-      top: 0;
-      display: none;
-    }
-  }
-
-  .circle-2 {
-    height: 250px;
-    width: 270px;
-    border-radius: 500px;
-    background-color: #C0E8F9;
-    position: absolute;
-    z-index: 1;
-
-    @media only screen and (max-width: 500px) {
-      left: -110px;
-      bottom: -180px;
-    }
-
-    @media only screen and (min-width: 500px) {
-      right: 60px;
-      left: -110px;
-      bottom: -180px;
-    }
-  }
-}
-
-button {
-  padding: 16px 45px;
-  border: 0;
-  border-radius: 100px;
-  font-size: 0.8em;
-  font-weight: bold;
-  letter-spacing: 2px;
-  background-color: #1ed760;
-  color: white;
-  display: inline-block;
-  transition: 0.3s ease;
-
-  &:hover {
-    transform: scale(1.05);
+    @include button($backgroundColor: black);
   }
 }

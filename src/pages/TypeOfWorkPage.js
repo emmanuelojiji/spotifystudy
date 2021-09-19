@@ -19,11 +19,13 @@ export default function TypeOfWorkPage() {
     timeOfDay = "Evening";
   }
 
+  const [greeting, setGreeting] = useState(timeOfDay)
+
   
 
   return (
     <>
-      <Header />
+      <Header background="#121212" />
       <main className="type-of-work-main">
         <div className="main-wrap">
           <section className="card-container">
@@ -40,32 +42,32 @@ export default function TypeOfWorkPage() {
               >
                 <Card
                   taskName="Short Task"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                  description="This technique focuses on a quick 10 minute task."
                 />
               </Link>
               <Link
                 to={{
                   pathname: "/PlayerPage",
                   state: {
-                    task: "Medium Task",
+                    task: "Focus Block",
                   },
                 }}
               >
                 <Card
-                  taskName="Task Type"
-                  description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                  taskName="Focus Block"
+                  description="This technique focuses on intense concentration for 90 minutes."
                 />
               </Link>
               <Link
                 to={{
                   pathname: "/PlayerPage",
                   state: {
-                    task: "Long Task,",
+                    task: "Pomodoro",
                   },
                 }}
               >
                 <Card
-                  taskName="Task Type"
+                  taskName="Pomodoro"
                   description="The technique uses a timer to break down work into 25 minute intervals."
                 />
               </Link>

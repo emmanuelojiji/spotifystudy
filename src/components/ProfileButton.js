@@ -11,7 +11,7 @@ export default function ProfileButton() {
   };
 
   return (
-    <>
+    <div className="profile-button">
       <div className="menu-container">
         <div
           className="profile-container"
@@ -39,6 +39,6 @@ export default function ProfileButton() {
           <a>Log Out</a>
         </div>
       </div>
-    </>
+    </div>
   );
 }
