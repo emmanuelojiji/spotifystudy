@@ -16,6 +16,7 @@ export default function Player() {
           <p className="artist">Burna Boy</p>
         </div>
       </div>
+
     </>
   );
 }

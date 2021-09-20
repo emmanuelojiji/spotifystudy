@@ -5,6 +5,8 @@ import Header from "../components/Header";
 import "../pages/HomePage.scss";
 import { auth_url } from "../login";
 
+import Sidebar from "../components/Sidebar";
+
 export default function HomePage() {
   return (
     <div className="homepage">

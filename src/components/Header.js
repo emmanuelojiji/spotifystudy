@@ -23,7 +23,7 @@ export default function Header(props) {
 
   return (
     <>
-      <header style={{ background:`${props.background}`}}>
+      <header style={{ background:`${props.background}`}} class="main-header">
         <div class="header-wrap" style={{maxWidth:`${props.maxWidth}`}}>
           <Link to="/">
             <div class="logo-wrap">
