@@ -2,12 +2,28 @@
     header{
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-end;
     }
-    
+
     h1{
         color:white;
         font-size: 1.8em;
         font-family: "circularBold";
+    }
+
+    .choose-mood{
+        margin-bottom: 25px;
+    }
+
+    .mood-row{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        
+    }
+
+    .row-title{
+        margin-bottom: 25px;
+        font-size: 1.5em;
     }
 }
