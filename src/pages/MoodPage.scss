@@ -3,16 +3,19 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        padding-top: 24px;
     }
 
     h1{
         color:white;
-        font-size: 1.8em;
         font-family: "circularBold";
     }
 
     .choose-mood{
+        margin-top: 24px;
         margin-bottom: 25px;
+        font-size: 32px;
+
     }
 
     .mood-row{
@@ -27,3 +30,8 @@
         font-size: 1.5em;
     }
 }
+
+.gradient-container{
+    background-color: brown;
+}
+

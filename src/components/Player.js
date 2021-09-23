@@ -1,6 +1,10 @@
 import "./Player.scss";
+import PlayingState from "../PlayingState";
+import {useState} from 'react'
 
-export default function Player() {
+
+export default function Player(props) {
+
   return (
     <>
       <div className="player-container">
@@ -12,7 +16,7 @@ export default function Player() {
           />
         </figure>
         <div>
-          <h1 className="song-title">JA ARA E</h1>
+          <h1 className="song-title">{props.songPlaying}</h1>
           <p className="artist">Burna Boy</p>
         </div>
       </div>

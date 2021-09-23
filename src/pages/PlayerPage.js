@@ -5,9 +5,10 @@ import Sidebar from "../components/Sidebar";
 import Player from "../components/Player";
 import ProfileButton from "../components/ProfileButton";
 import Work from "./Work";
-import Mood from "./Mood";
+import Mood from "./MoodPage";
+import PlayingState from "../PlayingState";
 
-export default function PlayerPage() {
+export default function PlayerPage(props) {
   const { state } = useLocation();
 
   return (
@@ -19,9 +20,8 @@ export default function PlayerPage() {
             <Mood />
           </main>
         </div>
-        <Player />
+        <Player songPlaying={props.songPlaying} />
       </div>
-     
     </>
   );
 }
