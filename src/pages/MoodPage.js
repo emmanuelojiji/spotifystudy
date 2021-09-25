@@ -3,29 +3,30 @@ import { useEffect, useState } from "react";
 import MoodCard from "../components/MoodCard";
 import ProfileButton from "../components/ProfileButton";
 import { useRef } from "react";
-
 import { MoodCardInfo } from "./MoodCardInfo";
 
+export default function MoodPage(props) {
+  const audioRef = useRef(null);
 
-export default function MoodPage() {
   const [currentSound, setCurrentSound] = useState(null);
-
-  const audio = useRef(null);
-
-  const [isHover, setIsHover] = useState(false);
+  const [isSoundPlaying, setIsSoundPlaying] = useState(false);
 
   useEffect(() => {
-    currentSound && audio.current.play();
-    console.log(isHover);
+    console.log(currentSound);
+    console.log(isSoundPlaying);
   });
 
   return (
     <>
-      {currentSound && (
-        <audio loop="true" className="audio" ref={audio}>
-          <source src={currentSound} />
+      {/*<audio loop="true" className="audio" ref={audioRef}>
+        <source src={currentSound} />
+  </audio>*/}
+
+      {MoodCardInfo.map((audioMap) => (
+        <audio loop="true" className="audio" ref={audioRef}>
+          <source src={audioMap.sound} />
         </audio>
-      )}
+      ))}
 
       <div className="mood-container">
         <header>
@@ -42,10 +43,20 @@ export default function MoodPage() {
                 <MoodCard
                   name={info.name}
                   backgroundImage={info.image}
-                  onClick={() => setCurrentSound(info.sound)}
-                  onMouseEnter={() => setIsHover(true)}
-                  onMouseLeave={() => setIsHover(false)}
-                  isHover={isHover}
+                  playSound={() => {
+                    setCurrentSound(info.sound);
+                    audioRef.current.load();
+                    audioRef.current.play();
+                    audioRef.current.play && setIsSoundPlaying(true);
+                  }}
+                  pauseSound={(event) => {
+                    audioRef.current.pause();
+                    setIsSoundPlaying(false);
+                    console.log("paused");
+                    event.stopPropagation();
+                  }}
+                  hidePlayButton={isSoundPlaying}
+                  showPauseButton={isSoundPlaying}
                 />
               </>
             ))}
