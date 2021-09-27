@@ -5,8 +5,8 @@
   background-color: rgba(255, 255, 255, 0.05);
   font-size: 11px;
   border-radius: 3px;
-  border: 0;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
+  border: solid 1px transparent;
 
   &:hover {
     background-color: rgba(255, 255, 255, 0.1);

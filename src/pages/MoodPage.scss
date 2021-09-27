@@ -1,37 +1,34 @@
-.mood-container{
-    header{
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding-top: 24px;
-    }
+.mood-container {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 24px;
+  }
 
-    h1{
-        color:white;
-        font-family: "circularBold";
-    }
+  h1 {
+    color: white;
+    font-family: "circularBold";
+  }
 
-    .choose-mood{
-        margin-top: 24px;
-        margin-bottom: 25px;
-        font-size: 32px;
+  .choose-mood {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    font-size: 32px;
+  }
 
-    }
+  .mood-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
 
-    .mood-row{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 25px;
-        
-    }
-
-    .row-title{
-        margin-bottom: 25px;
-        font-size: 1.5em;
-    }
+  .row-title {
+    margin-bottom: 25px;
+    font-size: 1.5em;
+  }
 }
 
-.gradient-container{
-    background-color: brown;
+.gradient-container {
+  background-color: brown;
 }
-
