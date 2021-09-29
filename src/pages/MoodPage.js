@@ -16,9 +16,12 @@ export default function MoodPage(props) {
   const [isOceanSoundPlaying, setIsOceanSoundPlaying] = useState(false);
   const [isThunderSoundPlaying, setIsThunderSoundPlaying] = useState(false);
   const [isWaterfallSoundPlaying, setIsWaterfallSoundPlaying] = useState(false);
-  const [isNightForestSoundPlaying, setIsNightForestSoundPlaying] = useState(false);
+  const [isNightForestSoundPlaying, setIsNightForestSoundPlaying] =
+    useState(false);
 
   const borderStyle = "solid 1px #666666";
+
+  const [soundPlaying, setSoundPlaying] = useState([]);
 
   return (
     <>
@@ -55,6 +58,8 @@ export default function MoodPage(props) {
                 RainAudioRef.current.load();
                 RainAudioRef.current.play();
                 RainAudioRef.current.play && setIsRainSoundPlaying(true);
+                RainAudioRef.current.play && setSoundPlaying("rain playing");
+                console.log(soundPlaying);
               }}
               pauseSound={(event) => {
                 RainAudioRef.current.pause();
@@ -65,6 +70,7 @@ export default function MoodPage(props) {
               hidePlayButton={isRainSoundPlaying}
               showPauseButton={isRainSoundPlaying}
               showBorder={isRainSoundPlaying && borderStyle}
+              showVolume={isRainSoundPlaying && "flex"}
             />
 
             <MoodCard
@@ -84,6 +90,7 @@ export default function MoodPage(props) {
               hidePlayButton={isOceanSoundPlaying}
               showPauseButton={isOceanSoundPlaying}
               showBorder={isOceanSoundPlaying && borderStyle}
+              showVolume={isOceanSoundPlaying && "flex"}
             />
 
             <MoodCard
